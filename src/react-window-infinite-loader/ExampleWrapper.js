@@ -18,7 +18,8 @@ export function ExampleWrapper({
   loadNextPage
 }) {
   // If there are more items to be loaded then add an extra row to hold a loading indicator.
-  const itemCount = hasNextPage ? items.length + 1 : items.length;
+  // const itemCount = hasNextPage ? items.length + 1 : items.length;
+  const itemCount = hasNextPage ? items.length + 3 : items.length;
 
   // Only load 1 page of items at a time.
   // Pass an empty callback to InfiniteLoader in case it asks us to load more than once.
@@ -33,7 +34,7 @@ export function ExampleWrapper({
     if (!isItemLoaded(index)) {
       content = "Loading...";
     } else {
-      content = items[index].name;
+      content = items[index].amount;
     }
 
     return (

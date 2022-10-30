@@ -1,5 +1,6 @@
-// import { ExampleUsage } from "./react-window-infinite-loader/ExampleUsage";
+import { ExampleUsage } from "./react-window-infinite-loader/ExampleUsage";
 import { ExampleUsage2 } from "./react-window-infinite-loader/ExampleUsage2";
+import { ExampleUsage3 } from "./react-window-infinite-loader/ExampleUsage3";
 // import { HorizontalFixedSizeListExample } from "./react-window/HorizontalFixedSizeListExample";
 // import { HorizontalVariableSizeListExample } from "./react-window/HorizontalVariableSizeListExample";
 // import { ScrollingIndicatorsExample } from "./react-window/ScrollingIndicatorsExample";
@@ -24,12 +25,14 @@ export function App() {
       <h2>Scrolling To An Item Example</h2>
       <ScrollingToAnItemExample />
 
-      <h1>React Window Infinite Loader</h1>
-      <h2>Example Usage</h2>
+      <h1>React Window Infinite Loader</h1> */}
+      {/* <h2>Example Usage</h2>
       <ExampleUsage /> */}
 
       {/* <h2>Example Usage 2</h2> */}
       <ExampleUsage2 />
+
+      {/* <ExampleUsage3 /> */}
     </div>
   );
 }

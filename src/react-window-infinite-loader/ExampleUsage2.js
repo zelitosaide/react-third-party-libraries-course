@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ExampleWrapper } from "./ExampleWrapper";
 
 let page = 1;
+const LIMIT = 5;
 
 export function ExampleUsage2() {
   const [state, setState] = useState({
@@ -11,7 +12,8 @@ export function ExampleUsage2() {
   });
 
   async function loadNextPage() {
-    return fetch(`http://localhost:5000/invoices?limit=${5}&page=${page++}`)
+    console.log(state);
+    return fetch(`http://localhost:5000/invoices?limit=${LIMIT}&page=${page++}`)
       .then(function (response) {
         setState(function (prevState) {
           return {
