@@ -36,7 +36,11 @@ export function ExampleWrapper({
       content = items[index].name;
     }
 
-    return <div style={style}>{content}</div>;
+    return (
+      <div className={index % 2 ? 'ListItemOdd' : 'ListItemEven'} style={style}>
+        {content}
+      </div>
+    );
   };
 
   return (
@@ -48,12 +52,13 @@ export function ExampleWrapper({
       {({ onItemsRendered, ref }) => (
         <List
           className="List"
-          height={150}
+          height={75}
           itemCount={itemCount}
-          itemSize={30}
+          itemSize={100}
           onItemsRendered={onItemsRendered}
           ref={ref}
           width={300}
+          layout="horizontal"
         >
           {Item}
         </List>

@@ -11,7 +11,7 @@ export function ExampleUsage2() {
   });
 
   async function loadNextPage() {
-    return fetch(`http://localhost:5000/invoices?limit=${9}&page=${page++}`)
+    return fetch(`http://localhost:5000/invoices?limit=${5}&page=${page++}`)
       .then(function (response) {
         setState(function (prevState) {
           return {
