@@ -19,8 +19,8 @@ export function LoadingSkeleton() {
 
       <div style={{ padding: 20 }}>
         <SkeletonTheme
-          baseColor="red"
-          highlightColor="green"
+          baseColor="#202020"
+          highlightColor="#444"
         >
           <p>
             <Skeleton count={3} />
