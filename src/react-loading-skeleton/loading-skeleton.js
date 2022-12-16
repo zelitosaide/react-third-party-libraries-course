@@ -27,6 +27,45 @@ export function LoadingSkeleton() {
           </p>
         </SkeletonTheme>
       </div>
+      <div style={{ padding: 20 }}>
+        <Box />
+      </div>
+      <div style={{ padding: 20 }}>
+        <Box>
+          <Skeleton />
+        </Box>
+      </div>
+      <div style={{ padding: 20 }}>
+        <Skeleton
+          wrapper={Box}
+          count={3}
+        />
+      </div>
+
+      <div style={{ padding: 20 }}>
+        <Skeleton
+          height={30}
+          width={30}
+          circle={true}
+        />
+      </div>
     </>
+  );
+}
+
+function Box({ children }) {
+  return (
+    <div
+      style={{
+        border: "1px solid #ccc",
+        display: "block",
+        lineHeight: 2,
+        padding: "1rem",
+        marginBottom: "0.5rem",
+        width: 100,
+      }}
+    >
+      {children}
+    </div>
   );
 }
