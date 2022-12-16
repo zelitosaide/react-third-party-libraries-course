@@ -17,14 +17,16 @@ export function LoadingSkeleton() {
         <Skeleton count={10} />
       </div>
 
-      <SkeletonTheme
-        baseColor="red"
-        highlightColor="green"
-      >
-        <p>
-          <Skeleton count={3} />
-        </p>
-      </SkeletonTheme>
+      <div style={{ padding: 20 }}>
+        <SkeletonTheme
+          baseColor="red"
+          highlightColor="green"
+        >
+          <p>
+            <Skeleton count={3} />
+          </p>
+        </SkeletonTheme>
+      </div>
     </>
   );
 }
