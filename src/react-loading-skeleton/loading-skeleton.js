@@ -1,4 +1,4 @@
-import Skeleton from "react-loading-skeleton";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 export function LoadingSkeleton() {
@@ -16,6 +16,15 @@ export function LoadingSkeleton() {
         </h1>
         <Skeleton count={10} />
       </div>
+
+      <SkeletonTheme
+        baseColor="red"
+        highlightColor="green"
+      >
+        <p>
+          <Skeleton count={3} />
+        </p>
+      </SkeletonTheme>
     </>
   );
 }
