@@ -15,7 +15,7 @@ export function ExampleUsage3() {
       itemStatusMap[index] = LOADING;
     }
 
-    return new Promise(resolve =>
+    return new Promise((resolve) =>
       setTimeout(() => {
         for (let index = startIndex; index <= stopIndex; index++) {
           itemStatusMap[index] = LOADED;
@@ -23,7 +23,7 @@ export function ExampleUsage3() {
         resolve();
       }, 2500)
     );
-  };
+  }
 
   function Row({ index, style }) {
     let label;
@@ -33,7 +33,10 @@ export function ExampleUsage3() {
       label = "Loading...";
     }
     return (
-      <div className="ListItem" style={style}>
+      <div
+        className="ListItem"
+        style={style}
+      >
         {label}
       </div>
     );

@@ -15,7 +15,7 @@ export function ExampleWrapper({
   items,
 
   // Callback function responsible for loading the next page of items.
-  loadNextPage
+  loadNextPage,
 }) {
   // If there are more items to be loaded then add an extra row to hold a loading indicator.
   // const itemCount = hasNextPage ? items.length + 1 : items.length;
@@ -23,10 +23,10 @@ export function ExampleWrapper({
 
   // Only load 1 page of items at a time.
   // Pass an empty callback to InfiniteLoader in case it asks us to load more than once.
-  const loadMoreItems = isNextPageLoading ? () => { } : loadNextPage;
+  const loadMoreItems = isNextPageLoading ? () => {} : loadNextPage;
 
   // Every row is loaded except for our loading indicator row.
-  const isItemLoaded = index => !hasNextPage || index < items.length;
+  const isItemLoaded = (index) => !hasNextPage || index < items.length;
 
   // Render an item or a loading indicator.
   const Item = ({ index, style }) => {
@@ -38,7 +38,10 @@ export function ExampleWrapper({
     }
 
     return (
-      <div className={index % 2 ? 'ListItemOdd' : 'ListItemEven'} style={style}>
+      <div
+        className={index % 2 ? "ListItemOdd" : "ListItemEven"}
+        style={style}
+      >
         {content}
       </div>
     );
@@ -60,6 +63,7 @@ export function ExampleWrapper({
           ref={ref}
           width={300}
           layout="horizontal"
+          style={{ width: "100%" }}
         >
           {Item}
         </List>

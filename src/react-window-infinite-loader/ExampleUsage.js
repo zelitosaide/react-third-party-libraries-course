@@ -20,7 +20,10 @@ function Row({ index, style, data }) {
     label = "Loading...";
   }
   return (
-    <div className="ListItem" style={style}>
+    <div
+      className="ListItem"
+      style={style}
+    >
       {label}
     </div>
   );
@@ -30,10 +33,10 @@ export function ExampleUsage() {
   const [data, setData] = useState([]);
 
   if (data.length === 0) {
-    setData(Array.from({ length: 100 }).map(_ => null));
+    setData(Array.from({ length: 100 }).map((_) => null));
   }
 
-  const isItemLoaded = index => index < data.length && data[index] !== null;
+  const isItemLoaded = (index) => index < data.length && data[index] !== null;
 
   async function loadMoreItems(startIndex, stopIndex) {
     for (let index = startIndex; index <= stopIndex; index++) {
@@ -51,7 +54,8 @@ export function ExampleUsage() {
     return fetch(`http://localhost:5000/invoices?limit=${limit}&page=${page++}`)
       .then(function (response) {
         return response.json();
-      }).then(function ({ items }) {
+      })
+      .then(function ({ items }) {
         const newData = [...data];
         for (let idx = startIndex; idx < stopIndex; idx++) {
           newData[idx] = items[idx];

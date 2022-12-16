@@ -8,31 +8,31 @@ export function ExampleUsage2() {
   const [state, setState] = useState({
     hasNextPage: true,
     isNextPageLoading: false,
-    items: []
+    items: [],
   });
 
   async function loadNextPage() {
-    console.log(state);
     return fetch(`http://localhost:5000/invoices?limit=${LIMIT}&page=${page++}`)
       .then(function (response) {
         setState(function (prevState) {
           return {
             ...prevState,
-            isNextPageLoading: true
+            isNextPageLoading: true,
           };
         });
         return response.json();
-      }).then(function ({ items, pageInfo: { totalResults } }) {
+      })
+      .then(function ({ items, pageInfo: { totalResults } }) {
         setState(function (prevState) {
           return {
             ...prevState,
             hasNextPage: prevState.items.length < totalResults,
             isNextPageLoading: false,
-            items: [...prevState.items].concat(items)
+            items: [...prevState.items].concat(items),
           };
         });
       });
-  };
+  }
 
   return (
     <ExampleWrapper
