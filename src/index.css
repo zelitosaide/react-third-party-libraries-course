@@ -31,7 +31,64 @@ html {
   background-color: #f8f8f0;
 }
 
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-check {
+  font-size: 1.3rem;
+}
+
 .post {
   display: flex;
   width: 600px;
+}
+
+.post .left-col {
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.post .avatar {
+  width: 55px;
+  height: 55px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.post .avatar-skeleton {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+}
+
+.post .avatar img {
+  width: 70%;
+  height: 70%;
+}
+
+.post .right-col {
+  flex: 1;
+}
+
+.post h3 {
+  font-size: 1.3rem;
+}
+
+.list-item {
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.list-item:not(:last-child) {
+  border-bottom: none;
 }
