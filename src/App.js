@@ -1,3 +1,4 @@
+import { LoadingSkeleton } from "./react-loading-skeleton/loading-skeleton";
 import { ExampleUsage } from "./react-window-infinite-loader/ExampleUsage";
 import { ExampleUsage2 } from "./react-window-infinite-loader/ExampleUsage2";
 import { ExampleUsage3 } from "./react-window-infinite-loader/ExampleUsage3";
@@ -30,9 +31,11 @@ export function App() {
       <ExampleUsage /> */}
 
       {/* <h2>Example Usage 2</h2> */}
-      <ExampleUsage2 />
+      {/* <ExampleUsage2 /> */}
 
       {/* <ExampleUsage3 /> */}
+
+      <LoadingSkeleton />
     </div>
   );
 }
