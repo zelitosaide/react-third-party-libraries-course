@@ -10,6 +10,12 @@ export function LoadingSkeleton() {
       <div style={{ padding: 20 }}>
         <Skeleton count={5} />
       </div>
+      <div style={{ padding: 20 }}>
+        <h1>
+          <Skeleton />
+        </h1>
+        <Skeleton count={10} />
+      </div>
     </>
   );
 }
