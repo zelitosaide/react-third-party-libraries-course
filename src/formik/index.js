@@ -13,8 +13,10 @@ function Form() {
     },
   });
 
+  console.log(formik.values);
+
   return (
-    <form>
+    <form onSubmit={formik.handleSubmit}>
       <p>
         <label htmlFor="name">Name: </label>
         <input
