@@ -23,6 +23,7 @@ function Form() {
         name="channel"
         id="channel"
       />
+      <button>Submit</button>
     </form>
   );
 }
