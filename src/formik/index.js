@@ -1,8 +1,25 @@
-import { useFormik } from "formik";
+import { useFormik, Formik } from "formik";
 import * as Yup from "yup";
 
 export default function Index() {
-  return <Form />;
+  return (
+    <>
+      <Form />
+      <Form2 />
+    </>
+  );
+}
+
+function Form() {
+  return (
+    <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={onSubmit}
+    >
+      <form></form>
+    </Formik>
+  );
 }
 
 const initialValues = {
@@ -15,23 +32,23 @@ function onSubmit(values) {
   console.log(values);
 }
 
-// function validate(values) {
-//   const errors = {};
-//   if (!values.name) {
-//     errors.name = "This field is required!";
-//   }
-//   if (!values.email) {
-//     errors.email = "This field is required!";
-//   } else if (
-//     !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)
-//   ) {
-//     errors.email = "Invalid email format!";
-//   }
-//   if (!values.channel) {
-//     errors.channel = "This field is required!";
-//   }
-//   return errors;
-// }
+function validate(values) {
+  const errors = {};
+  if (!values.name) {
+    errors.name = "This field is required!";
+  }
+  if (!values.email) {
+    errors.email = "This field is required!";
+  } else if (
+    !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)
+  ) {
+    errors.email = "Invalid email format!";
+  }
+  if (!values.channel) {
+    errors.channel = "This field is required!";
+  }
+  return errors;
+}
 
 const validationSchema = Yup.object({
   name: Yup.string().required("This field is required!"),
@@ -41,7 +58,7 @@ const validationSchema = Yup.object({
   channel: Yup.string().required("This field is required!"),
 });
 
-function Form() {
+function Form2() {
   const formik = useFormik({
     initialValues,
     onSubmit,
