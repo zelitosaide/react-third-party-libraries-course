@@ -1,23 +1,52 @@
-import { useFormik, Formik } from "formik";
+import { useFormik, Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 export default function Index() {
   return (
     <>
-      <Form />
+      <Form1 />
       <Form2 />
     </>
   );
 }
 
-function Form() {
+function Form1() {
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
-      <form></form>
+      <Form>
+        <p>
+          <label htmlFor="name">Name: </label>
+          <Field
+            type="text"
+            name="name"
+            id="name"
+          />
+          <ErrorMessage name="name" />
+        </p>
+        <p>
+          <label htmlFor="email">Email: </label>
+          <Field
+            type="email"
+            name="email"
+            id="email"
+          />
+          <ErrorMessage name="email" />
+        </p>
+        <p>
+          <label htmlFor="channel">Channel: </label>
+          <Field
+            type="text"
+            name="channel"
+            id="channel"
+          />
+          <ErrorMessage name="channel" />
+        </p>
+        <button type="submit">Submit</button>
+      </Form>
     </Formik>
   );
 }
