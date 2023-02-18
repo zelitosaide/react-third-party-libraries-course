@@ -4,28 +4,34 @@ export default function Index() {
   return <Form />;
 }
 
+const initialValues = {
+  name: "",
+  email: "",
+  channel: "",
+};
+
+function onSubmit(values) {
+  console.log(values);
+}
+
+function validate(values) {
+  const errors = {};
+  if (!values.name) {
+    errors.name = "This field is required!";
+  }
+  if (!values.email) {
+    errors.email = "This field is required!";
+  }
+  if (!values.channel) {
+    errors.channel = "This field is required!";
+  }
+}
+
 function Form() {
   const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      channel: "",
-    },
-    onSubmit: function (values) {
-      console.log(values);
-    },
-    validate: function (values) {
-      const errors = {};
-      if (!values.name) {
-        errors.name = "This field is required!";
-      }
-      if (!values.email) {
-        errors.email = "This field is required!";
-      }
-      if (!values.channel) {
-        errors.channel = "This field is required!";
-      }
-    },
+    initialValues,
+    onSubmit,
+    validate,
   });
 
   return (
