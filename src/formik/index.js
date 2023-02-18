@@ -53,7 +53,7 @@ function Form() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
         />
-        {!!formik.errors.name && (
+        {formik.touched.name && !!formik.errors.name && (
           <div style={{ color: "red" }}>{formik.errors.name}</div>
         )}
       </p>
@@ -67,7 +67,7 @@ function Form() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
         />
-        {!!formik.errors.email && (
+        {formik.touched.email && !!formik.errors.email && (
           <div style={{ color: "red" }}>{formik.errors.email}</div>
         )}
       </p>
@@ -81,7 +81,7 @@ function Form() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
         />
-        {!!formik.errors.channel && (
+        {formik.touched.channel && !!formik.errors.channel && (
           <div style={{ color: "red" }}>{formik.errors.channel}</div>
         )}
       </p>
