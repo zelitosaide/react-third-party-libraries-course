@@ -24,11 +24,12 @@ function validate(values) {
   } else if (
     !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)
   ) {
-    return "Invalid email format!";
+    errors.email = "Invalid email format!";
   }
   if (!values.channel) {
     errors.channel = "This field is required!";
   }
+  return errors;
 }
 
 function Form() {
@@ -37,6 +38,8 @@ function Form() {
     onSubmit,
     validate,
   });
+
+  console.log(formik.errors);
 
   return (
     <form onSubmit={formik.handleSubmit}>
