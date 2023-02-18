@@ -48,7 +48,7 @@ function Form() {
           onChange={formik.handleChange}
         />
       </p>
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </form>
   );
 }
