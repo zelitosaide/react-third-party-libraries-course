@@ -52,6 +52,9 @@ function Form() {
           value={formik.values.name}
           onChange={formik.handleChange}
         />
+        {!!formik.errors.name && (
+          <div style={{ color: "red" }}>{formik.errors.name}</div>
+        )}
       </p>
       <p>
         <label htmlFor="email">Email: </label>
@@ -62,6 +65,9 @@ function Form() {
           value={formik.values.email}
           onChange={formik.handleChange}
         />
+        {!!formik.errors.email && (
+          <div style={{ color: "red" }}>{formik.errors.email}</div>
+        )}
       </p>
       <p>
         <label htmlFor="channel">Channel: </label>
@@ -72,6 +78,9 @@ function Form() {
           value={formik.values.channel}
           onChange={formik.handleChange}
         />
+        {!!formik.errors.channel && (
+          <div style={{ color: "red" }}>{formik.errors.channel}</div>
+        )}
       </p>
       <button type="submit">Submit</button>
     </form>
