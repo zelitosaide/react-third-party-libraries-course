@@ -1,14 +1,16 @@
-import { ComplexExamples } from "./react-loading-skeleton/complex-examples";
-import { LoadingSkeleton } from "./react-loading-skeleton/loading-skeleton";
-import { ExampleUsage } from "./react-window-infinite-loader/ExampleUsage";
-import { ExampleUsage2 } from "./react-window-infinite-loader/ExampleUsage2";
-import { ExampleUsage3 } from "./react-window-infinite-loader/ExampleUsage3";
+// import { ComplexExamples } from "./react-loading-skeleton/complex-examples";
+// import { LoadingSkeleton } from "./react-loading-skeleton/loading-skeleton";
+// import { ExampleUsage } from "./react-window-infinite-loader/ExampleUsage";
+// import { ExampleUsage2 } from "./react-window-infinite-loader/ExampleUsage2";
+// import { ExampleUsage3 } from "./react-window-infinite-loader/ExampleUsage3";
 // import { HorizontalFixedSizeListExample } from "./react-window/HorizontalFixedSizeListExample";
 // import { HorizontalVariableSizeListExample } from "./react-window/HorizontalVariableSizeListExample";
 // import { ScrollingIndicatorsExample } from "./react-window/ScrollingIndicatorsExample";
 // import { ScrollingToAnItemExample } from "./react-window/ScrollingToAnItemExample";
 // import { VerticalFixedSizeListExample } from "./react-window/VerticalFixedSizeListExample";
 // import { VerticalVariableSizeListExample } from "./react-window/VerticalVariableSizeListExample";
+
+import Formik from "./formik";
 
 export function App() {
   return (
@@ -37,7 +39,9 @@ export function App() {
       {/* <ExampleUsage3 /> */}
 
       {/* <LoadingSkeleton /> */}
-      <ComplexExamples />
+      {/* <ComplexExamples /> */}
+
+      <Formik />
     </div>
   );
 }
