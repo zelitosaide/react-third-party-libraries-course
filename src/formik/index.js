@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import * as Yup from "yup";
 
 export default function Index() {
   return <Form />;
@@ -14,32 +15,39 @@ function onSubmit(values) {
   console.log(values);
 }
 
-function validate(values) {
-  const errors = {};
-  if (!values.name) {
-    errors.name = "This field is required!";
-  }
-  if (!values.email) {
-    errors.email = "This field is required!";
-  } else if (
-    !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)
-  ) {
-    errors.email = "Invalid email format!";
-  }
-  if (!values.channel) {
-    errors.channel = "This field is required!";
-  }
-  return errors;
-}
+// function validate(values) {
+//   const errors = {};
+//   if (!values.name) {
+//     errors.name = "This field is required!";
+//   }
+//   if (!values.email) {
+//     errors.email = "This field is required!";
+//   } else if (
+//     !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)
+//   ) {
+//     errors.email = "Invalid email format!";
+//   }
+//   if (!values.channel) {
+//     errors.channel = "This field is required!";
+//   }
+//   return errors;
+// }
+
+const validationSchema = Yup.object({
+  name: Yup.string().required("This field is required!"),
+  email: Yup.string()
+    .email("Invalid email format!")
+    .required("This field is required!"),
+  channel: Yup.string().required("This field is required!"),
+});
 
 function Form() {
   const formik = useFormik({
     initialValues,
     onSubmit,
-    validate,
+    validationSchema,
+    // validate,
   });
-
-  console.log(formik.errors);
 
   return (
     <form onSubmit={formik.handleSubmit}>
@@ -49,12 +57,13 @@ function Form() {
           type="text"
           name="name"
           id="name"
-          value={formik.values.name}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
+          {...formik.getFieldProps("name")}
+          // value={formik.values.name}
+          // onChange={formik.handleChange}
+          // onBlur={formik.handleBlur}
         />
         {formik.touched.name && !!formik.errors.name && (
-          <div style={{ color: "red" }}>{formik.errors.name}</div>
+          <p style={{ color: "red" }}>{formik.errors.name}</p>
         )}
       </p>
       <p>
@@ -68,7 +77,7 @@ function Form() {
           onBlur={formik.handleBlur}
         />
         {formik.touched.email && !!formik.errors.email && (
-          <div style={{ color: "red" }}>{formik.errors.email}</div>
+          <p style={{ color: "red" }}>{formik.errors.email}</p>
         )}
       </p>
       <p>
@@ -82,7 +91,7 @@ function Form() {
           onBlur={formik.handleBlur}
         />
         {formik.touched.channel && !!formik.errors.channel && (
-          <div style={{ color: "red" }}>{formik.errors.channel}</div>
+          <p style={{ color: "red" }}>{formik.errors.channel}</p>
         )}
       </p>
       <button type="submit">Submit</button>
