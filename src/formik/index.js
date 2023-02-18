@@ -15,30 +15,36 @@ function Form() {
 
   return (
     <form>
-      <label htmlFor="name">Name: </label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        value={formik.values.name}
-        onChange={formik.handleChange}
-      />
-      <label htmlFor="email">Email: </label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        value={formik.values.email}
-        onChange={formik.handleChange}
-      />
-      <label htmlFor="channel">Channel: </label>
-      <input
-        type="text"
-        name="channel"
-        id="channel"
-        value={formik.values.channel}
-        onChange={formik.handleChange}
-      />
+      <p>
+        <label htmlFor="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value={formik.values.name}
+          onChange={formik.handleChange}
+        />
+      </p>
+      <p>
+        <label htmlFor="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value={formik.values.email}
+          onChange={formik.handleChange}
+        />
+      </p>
+      <p>
+        <label htmlFor="channel">Channel: </label>
+        <input
+          type="text"
+          name="channel"
+          id="channel"
+          value={formik.values.channel}
+          onChange={formik.handleChange}
+        />
+      </p>
       <button>Submit</button>
     </form>
   );
