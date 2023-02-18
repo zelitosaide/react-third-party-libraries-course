@@ -72,9 +72,10 @@ function Form() {
           type="email"
           name="email"
           id="email"
-          value={formik.values.email}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
+          {...formik.getFieldProps("email")}
+          // value={formik.values.email}
+          // onChange={formik.handleChange}
+          // onBlur={formik.handleBlur}
         />
         {formik.touched.email && !!formik.errors.email && (
           <p style={{ color: "red" }}>{formik.errors.email}</p>
@@ -86,9 +87,10 @@ function Form() {
           type="text"
           name="channel"
           id="channel"
-          value={formik.values.channel}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
+          {...formik.getFieldProps("channel")}
+          // value={formik.values.channel}
+          // onChange={formik.handleChange}
+          // onBlur={formik.handleBlur}
         />
         {formik.touched.channel && !!formik.errors.channel && (
           <p style={{ color: "red" }}>{formik.errors.channel}</p>
