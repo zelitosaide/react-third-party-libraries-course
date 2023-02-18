@@ -21,6 +21,10 @@ function validate(values) {
   }
   if (!values.email) {
     errors.email = "This field is required!";
+  } else if (
+    !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email)
+  ) {
+    return "Invalid email format!";
   }
   if (!values.channel) {
     errors.channel = "This field is required!";
