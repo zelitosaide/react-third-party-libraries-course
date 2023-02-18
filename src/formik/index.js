@@ -1,8 +1,12 @@
+import { useFormik } from "formik";
+
 export default function Index() {
   return <Form />;
 }
 
 function Form() {
+  const formik = useFormik({});
+
   return (
     <form>
       <label htmlFor="name">Name: </label>
