@@ -25,7 +25,9 @@ function Form1() {
             name="name"
             id="name"
           />
-          <ErrorMessage name="name" />
+          <p>
+            <ErrorMessage name="name" />
+          </p>
         </p>
         <p>
           <label htmlFor="email">Email: </label>
@@ -34,7 +36,9 @@ function Form1() {
             name="email"
             id="email"
           />
-          <ErrorMessage name="email" />
+          <p>
+            <ErrorMessage name="email" />
+          </p>
         </p>
         <p>
           <label htmlFor="channel">Channel: </label>
@@ -43,7 +47,9 @@ function Form1() {
             name="channel"
             id="channel"
           />
-          <ErrorMessage name="channel" />
+          <p>
+            <ErrorMessage name="channel" />
+          </p>
         </p>
         <button type="submit">Submit</button>
       </Form>
