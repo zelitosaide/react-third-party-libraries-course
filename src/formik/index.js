@@ -19,6 +19,12 @@ function Form() {
       if (!values.name) {
         errors.name = "This field is required!";
       }
+      if (!values.email) {
+        errors.email = "This field is required!";
+      }
+      if (!values.channel) {
+        errors.channel = "This field is required!";
+      }
     },
   });
 
