@@ -5,7 +5,13 @@ export default function Index() {
 }
 
 function Form() {
-  const formik = useFormik({});
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      channel: "",
+    },
+  });
 
   return (
     <form>
@@ -14,6 +20,8 @@ function Form() {
         type="text"
         name="name"
         id="name"
+        value={formik.values.name}
+        onChange={formik.handleChange}
       />
       <label htmlFor="email">Email: </label>
       <input
