@@ -11,9 +11,10 @@ function Form() {
       email: "",
       channel: "",
     },
+    onSubmit: function (values) {
+      console.log(values);
+    },
   });
-
-  console.log(formik.values);
 
   return (
     <form onSubmit={formik.handleSubmit}>
