@@ -14,6 +14,12 @@ function Form() {
     onSubmit: function (values) {
       console.log(values);
     },
+    validate: function (values) {
+      const errors = {};
+      if (!values.name) {
+        errors.name = "This field is required!";
+      }
+    },
   });
 
   return (
