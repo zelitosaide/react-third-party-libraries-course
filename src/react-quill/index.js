@@ -4,7 +4,7 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
 export default function Index() {
-  const [value, setValue] = useState("<h2>Ola</h2>");
+  const [value, setValue] = useState("");
 
   return (
     <>
