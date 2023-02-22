@@ -13,7 +13,7 @@ export default function Index() {
         value={value}
         onChange={setValue}
       />
-      <div dangerouslySetInnerHTML={{ __html: value }}></div>
+      <div dangerouslySetInnerHTML={{ __html: value }} />
     </>
   );
 }
