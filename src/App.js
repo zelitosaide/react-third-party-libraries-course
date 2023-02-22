@@ -10,7 +10,9 @@
 // import { VerticalFixedSizeListExample } from "./react-window/VerticalFixedSizeListExample";
 // import { VerticalVariableSizeListExample } from "./react-window/VerticalVariableSizeListExample";
 
-import Formik from "./formik";
+// import Formik from "./formik";
+
+import ReactQuil from "./react-quill";
 
 export function App() {
   return (
@@ -41,7 +43,9 @@ export function App() {
       {/* <LoadingSkeleton /> */}
       {/* <ComplexExamples /> */}
 
-      <Formik />
+      {/* <Formik /> */}
+
+      <ReactQuil />
     </div>
   );
 }
