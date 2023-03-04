@@ -2,18 +2,32 @@ import { Button, Stack } from "@mui/material";
 
 export default function Index() {
   return (
-    <Stack
-      spacing={2}
-      direction="row"
-    >
-      <Button
-        variant="text"
-        href="https://google.com"
+    <Stack spacing={4}>
+      <Stack
+        spacing={2}
+        direction="row"
       >
-        Text
-      </Button>
-      <Button variant="outlined">Outlined</Button>
-      <Button variant="contained">Contained</Button>
+        <Button
+          variant="text"
+          href="https://google.com"
+        >
+          Text
+        </Button>
+        <Button variant="outlined">Outlined</Button>
+        <Button variant="contained">Contained</Button>
+      </Stack>
+
+      <Stack
+        spacing={2}
+        direction="row"
+      >
+        <Button
+          variant="contained"
+          color="primary"
+        >
+          Primary
+        </Button>
+      </Stack>
     </Stack>
   );
 }
