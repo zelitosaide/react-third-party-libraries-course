@@ -100,7 +100,11 @@ export default function Index() {
         >
           Send
         </Button>
-        <IconButton aria-label="send">
+        <IconButton
+          aria-label="send"
+          color="success"
+          size="small"
+        >
           <SendIcon />
         </IconButton>
       </Stack>
