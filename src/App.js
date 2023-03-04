@@ -18,7 +18,7 @@ import MUIComponents from "./mui";
 
 export function App() {
   return (
-    <div>
+    <div style={{ padding: 24 }}>
       {/* <h1>React Window</h1> */}
       {/* <h2>Vertical Fixed Size List Example</h2>
       <VerticalFixedSizeListExample />
