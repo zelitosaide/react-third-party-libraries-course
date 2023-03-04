@@ -18,6 +18,7 @@ import {
 
 export default function Index() {
   const [formats, setFormats] = useState([]);
+  const [formatsExclusive, setFormatsExclusive] = useState(null);
 
   return (
     <Stack spacing={4}>
@@ -169,6 +170,38 @@ export default function Index() {
           size="small"
           color="secondary"
           orientation="vertical"
+        >
+          <ToggleButton
+            value="bold"
+            aria-label="bold"
+          >
+            <FormatBoldIcon />
+          </ToggleButton>
+          <ToggleButton
+            value="italic"
+            aria-label="italic"
+          >
+            <FormatItalicIcon />
+          </ToggleButton>
+          <ToggleButton
+            value="underlined"
+            aria-label="underlined"
+          >
+            <FormatUnderlinedIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
+      </Stack>
+
+      <Stack direction="row">
+        <ToggleButtonGroup
+          aria-label="text formatting"
+          value={formatsExclusive}
+          onChange={function (e, nextFormat) {
+            setFormatsExclusive(nextFormat);
+          }}
+          size="small"
+          color="secondary"
+          exclusive
         >
           <ToggleButton
             value="bold"
