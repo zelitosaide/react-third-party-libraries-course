@@ -157,13 +157,22 @@ export default function Index() {
       </Stack>
       <Stack direction="row">
         <ToggleButtonGroup aria-label="text formatting">
-          <ToggleButton value="bold">
+          <ToggleButton
+            value="bold"
+            aria-label="bold"
+          >
             <FormatBoldIcon />
           </ToggleButton>
-          <ToggleButton value="italic">
+          <ToggleButton
+            value="italic"
+            aria-label="italic"
+          >
             <FormatItalicIcon />
           </ToggleButton>
-          <ToggleButton value="underlined">
+          <ToggleButton
+            value="underlined"
+            aria-label="underlined"
+          >
             <FormatUnderlinedIcon />
           </ToggleButton>
         </ToggleButtonGroup>
