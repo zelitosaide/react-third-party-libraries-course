@@ -168,6 +168,7 @@ export default function Index() {
           }}
           size="small"
           color="success"
+          orientation="vertical"
         >
           <ToggleButton
             value="bold"
