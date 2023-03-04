@@ -64,6 +64,9 @@ export default function Index() {
         <TextField
           label="Amount"
           size="small"
+          InputProps={{
+            startAdornment: <InputAdornment position="start">$</InputAdornment>,
+          }}
         />
         <TextField
           label="Weight"
