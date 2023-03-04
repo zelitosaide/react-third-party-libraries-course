@@ -45,6 +45,12 @@ export default function Index() {
         >
           Warning
         </Button>
+        <Button
+          variant="contained"
+          color="info"
+        >
+          Info
+        </Button>
       </Stack>
     </Stack>
   );
