@@ -23,6 +23,16 @@ export default function Index() {
           variant="standard"
         />
       </Stack>
+      <Stack
+        direction="row"
+        spacing={2}
+      >
+        <TextField
+          name="Small and secondary"
+          color="secondary"
+          size="small"
+        />
+      </Stack>
     </Stack>
   );
 }
