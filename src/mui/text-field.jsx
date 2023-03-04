@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Stack, TextField, InputAdornment } from "@mui/material";
 
 export default function Index() {
+  const [value, setValue] = useState("");
+
   return (
     <Stack
       spacing={4}
@@ -42,13 +45,18 @@ export default function Index() {
           color="secondary"
           size="small"
           required
+          disabled
         />
         <TextField
           label="Password"
           type="password"
           size="small"
           helperText="Do not share your password with anyone"
-          disabled
+          value={value}
+          onChange={function (e) {
+            setValue(e.target.value);
+          }}
+          error={!value}
         />
         <TextField
           label="Read Only"
