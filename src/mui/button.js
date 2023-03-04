@@ -160,6 +160,12 @@ export default function Index() {
           <ToggleButton>
             <FormatBoldIcon />
           </ToggleButton>
+          <ToggleButton>
+            <FormatItalicIcon />
+          </ToggleButton>
+          <ToggleButton>
+            <FormatUnderlinedIcon />
+          </ToggleButton>
         </ToggleButtonGroup>
       </Stack>
     </Stack>
