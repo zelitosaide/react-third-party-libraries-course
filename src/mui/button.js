@@ -1,4 +1,4 @@
-import { Button, Stack } from "@mui/material";
+import { Button, Stack, IconButton } from "@mui/material";
 
 import { Send as SendIcon } from "@mui/icons-material";
 
@@ -100,6 +100,9 @@ export default function Index() {
         >
           Send
         </Button>
+        <IconButton aria-label="send">
+          <SendIcon />
+        </IconButton>
       </Stack>
     </Stack>
   );
