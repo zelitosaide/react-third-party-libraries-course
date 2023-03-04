@@ -82,6 +82,12 @@ export default function Index() {
           Large
         </Button>
       </Stack>
+      <Stack
+        spacing={2}
+        direction="row"
+      >
+        <Button variant="contained">Send</Button>
+      </Stack>
     </Stack>
   );
 }
