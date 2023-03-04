@@ -50,6 +50,11 @@ export default function Index() {
           helperText="Do not share your password with anyone"
           disabled
         />
+        <TextField
+          label="Read Only"
+          size="small"
+          InputProps={{ readOnly: true }}
+        />
       </Stack>
     </Stack>
   );
