@@ -29,6 +29,12 @@ export default function Index() {
         </Button>
         <Button
           variant="contained"
+          color="secondary"
+        >
+          Secondary
+        </Button>
+        <Button
+          variant="contained"
           color="error"
         >
           Error
