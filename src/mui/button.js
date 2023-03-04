@@ -7,7 +7,12 @@ import {
   ToggleButton,
 } from "@mui/material";
 
-import { Send as SendIcon } from "@mui/icons-material";
+import {
+  Send as SendIcon,
+  FormatBold as FormatBoldIcon,
+  FormatItalic as FormatItalicIcon,
+  FormatUnderlined as FormatUnderlinedIcon,
+} from "@mui/icons-material";
 
 export default function Index() {
   return (
