@@ -28,9 +28,20 @@ export default function Index() {
         spacing={2}
       >
         <TextField
-          name="Small and secondary"
+          label="Small secondary"
           color="secondary"
           size="small"
+        />
+      </Stack>
+      <Stack
+        direction="row"
+        spacing={2}
+      >
+        <TextField
+          label="Small and secondary"
+          color="secondary"
+          size="small"
+          required
         />
       </Stack>
     </Stack>
