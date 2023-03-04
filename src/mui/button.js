@@ -27,6 +27,12 @@ export default function Index() {
         >
           Primary
         </Button>
+        <Button
+          variant="contained"
+          color="error"
+        >
+          Error
+        </Button>
       </Stack>
     </Stack>
   );
