@@ -5,6 +5,7 @@ export default function Index() {
     <div>
       <Button variant="text">Text</Button>
       <Button variant="outlined">Outlined</Button>
+      <Button variant="contained">Contained</Button>
     </div>
   );
 }
