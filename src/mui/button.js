@@ -163,6 +163,9 @@ export default function Index() {
         <ToggleButtonGroup
           aria-label="text formatting"
           value={formats}
+          onChange={function (e, nextFormats) {
+            setFormats(nextFormats);
+          }}
         >
           <ToggleButton
             value="bold"
