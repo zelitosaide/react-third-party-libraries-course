@@ -1,4 +1,4 @@
-import { Box, TextField } from "@mui/material";
+import { Box, MenuItem, TextField } from "@mui/material";
 
 export default function Index() {
   return (
@@ -6,7 +6,11 @@ export default function Index() {
       <TextField
         label="Select country"
         select
-      ></TextField>
+      >
+        <MenuItem value="IN">India</MenuItem>
+        <MenuItem value="AU">Australia</MenuItem>
+        <MenuItem value="US">USA</MenuItem>
+      </TextField>
     </Box>
   );
 }
