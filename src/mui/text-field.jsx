@@ -43,6 +43,11 @@ export default function Index() {
           size="small"
           required
         />
+        <TextField
+          label="Password"
+          type="password"
+          helperText="Do not share your password with anyone"
+        />
       </Stack>
     </Stack>
   );
