@@ -117,6 +117,11 @@ export default function Index() {
           <SendIcon />
         </IconButton>
       </Stack>
+      <Stack direction="row">
+        <Button variant="contained">Left</Button>
+        <Button variant="contained">Ceter</Button>
+        <Button variant="contained">Right</Button>
+      </Stack>
     </Stack>
   );
 }
