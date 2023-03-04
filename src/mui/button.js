@@ -16,7 +16,12 @@ export default function Index() {
           Text
         </Button>
         <Button variant="outlined">Outlined</Button>
-        <Button variant="contained">Contained</Button>
+        <Button
+          variant="contained"
+          disableElevation
+        >
+          Contained
+        </Button>
       </Stack>
 
       <Stack
