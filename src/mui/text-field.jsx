@@ -2,7 +2,10 @@ import { Stack, TextField } from "@mui/material";
 
 export default function Index() {
   return (
-    <Stack spacing={4}>
+    <Stack
+      spacing={4}
+      style={{ marginBottom: 16 }}
+    >
       <Stack
         direction="row"
         spacing={2}
