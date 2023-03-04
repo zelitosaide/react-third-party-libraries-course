@@ -121,7 +121,10 @@ export default function Index() {
         direction="row"
         spacing={2}
       >
-        <ButtonGroup variant="contained">
+        <ButtonGroup
+          variant="contained"
+          orientation="vertical"
+        >
           <Button>Left</Button>
           <Button>Ceter</Button>
           <Button>Right</Button>
