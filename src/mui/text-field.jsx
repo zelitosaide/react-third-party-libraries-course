@@ -72,7 +72,7 @@ export default function Index() {
           label="Weight"
           size="small"
           InputProps={{
-            endAdornment: <InputAdornment position="end">Kg</InputAdornment>,
+            endAdornment: <InputAdornment position="end">kg</InputAdornment>,
           }}
         />
       </Stack>
