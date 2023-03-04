@@ -46,6 +46,7 @@ export default function Index() {
         <TextField
           label="Password"
           type="password"
+          size="small"
           helperText="Do not share your password with anyone"
         />
       </Stack>
