@@ -109,6 +109,7 @@ export default function Index() {
           aria-label="send"
           color="success"
           size="small"
+          disableRipple
         >
           <SendIcon />
         </IconButton>
