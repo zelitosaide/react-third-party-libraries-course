@@ -1,4 +1,4 @@
-import { Button, Stack, IconButton } from "@mui/material";
+import { Button, Stack, IconButton, ButtonGroup } from "@mui/material";
 
 import { Send as SendIcon } from "@mui/icons-material";
 
@@ -118,9 +118,11 @@ export default function Index() {
         </IconButton>
       </Stack>
       <Stack direction="row">
-        <Button variant="contained">Left</Button>
-        <Button variant="contained">Ceter</Button>
-        <Button variant="contained">Right</Button>
+        <ButtonGroup>
+          <Button variant="contained">Left</Button>
+          <Button variant="contained">Ceter</Button>
+          <Button variant="contained">Right</Button>
+        </ButtonGroup>
       </Stack>
     </Stack>
   );
