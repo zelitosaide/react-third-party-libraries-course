@@ -125,6 +125,8 @@ export default function Index() {
           variant="contained"
           orientation="vertical"
           color="warning"
+          size="small"
+          aria-label="Aignment button group"
         >
           <Button>Left</Button>
           <Button>Ceter</Button>
