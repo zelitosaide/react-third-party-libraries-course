@@ -32,9 +32,13 @@ export default function Index() {
             fullWidth
             value={countries}
             onChange={function (e) {
+              console.log(e.target.value);
               setCountries(e.target.value);
             }}
             SelectProps={{ multiple: true }}
+            size="small"
+            color="secondary"
+            helperText="Please select your country"
           >
             <MenuItem value="IN">India</MenuItem>
             <MenuItem value="AU">Australia</MenuItem>
