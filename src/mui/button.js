@@ -167,7 +167,7 @@ export default function Index() {
             setFormats(nextFormats);
           }}
           size="small"
-          color="success"
+          color="secondary"
           orientation="vertical"
         >
           <ToggleButton
