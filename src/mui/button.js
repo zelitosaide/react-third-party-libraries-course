@@ -160,7 +160,10 @@ export default function Index() {
         </ButtonGroup>
       </Stack>
       <Stack direction="row">
-        <ToggleButtonGroup aria-label="text formatting">
+        <ToggleButtonGroup
+          aria-label="text formatting"
+          value={formats}
+        >
           <ToggleButton
             value="bold"
             aria-label="bold"
