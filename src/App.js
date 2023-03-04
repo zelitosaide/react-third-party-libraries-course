@@ -12,7 +12,9 @@
 
 // import Formik from "./formik";
 
-import ReactQuil from "./react-quill";
+// import ReactQuil from "./react-quill";
+
+import MUIComponents from "./mui";
 
 export function App() {
   return (
@@ -45,7 +47,9 @@ export function App() {
 
       {/* <Formik /> */}
 
-      <ReactQuil />
+      {/* <ReactQuil /> */}
+
+      <MUIComponents />
     </div>
   );
 }
