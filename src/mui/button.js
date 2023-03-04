@@ -166,6 +166,8 @@ export default function Index() {
           onChange={function (e, nextFormats) {
             setFormats(nextFormats);
           }}
+          size="small"
+          color="success"
         >
           <ToggleButton
             value="bold"
