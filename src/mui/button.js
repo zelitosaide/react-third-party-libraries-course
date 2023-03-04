@@ -94,6 +94,12 @@ export default function Index() {
         >
           Send
         </Button>
+        <Button
+          variant="contained"
+          endIcon={<SendIcon />}
+        >
+          Send
+        </Button>
       </Stack>
     </Stack>
   );
