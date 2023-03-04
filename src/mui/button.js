@@ -1,5 +1,7 @@
 import { Button, Stack } from "@mui/material";
 
+import { Send as SendIcon } from "@mui/icons-material";
+
 export default function Index() {
   return (
     <Stack spacing={4}>
@@ -86,7 +88,12 @@ export default function Index() {
         spacing={2}
         direction="row"
       >
-        <Button variant="contained">Send</Button>
+        <Button
+          variant="contained"
+          startIcon={<SendIcon />}
+        >
+          Send
+        </Button>
       </Stack>
     </Stack>
   );
