@@ -51,6 +51,12 @@ export default function Index() {
         >
           Info
         </Button>
+        <Button
+          variant="contained"
+          color="success"
+        >
+          Success
+        </Button>
       </Stack>
     </Stack>
   );
