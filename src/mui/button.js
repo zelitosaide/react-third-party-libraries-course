@@ -18,7 +18,7 @@ import {
 
 export default function Index() {
   const [formats, setFormats] = useState([]);
-  const [formatsExclusive, setFormatsExclusive] = useState(null);
+  const [formatsExclusive, setFormatsExclusive] = useState("");
 
   return (
     <Stack spacing={4}>
