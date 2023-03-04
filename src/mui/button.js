@@ -110,6 +110,9 @@ export default function Index() {
           color="success"
           size="small"
           disableRipple
+          onClick={function () {
+            alert("Hello");
+          }}
         >
           <SendIcon />
         </IconButton>
