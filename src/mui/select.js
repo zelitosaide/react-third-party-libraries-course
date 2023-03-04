@@ -10,6 +10,10 @@ export default function Index() {
         label="Select country"
         select
         fullWidth
+        value={country}
+        onChange={function (e) {
+          setCountry(e.target.value);
+        }}
       >
         <MenuItem value="IN">India</MenuItem>
         <MenuItem value="AU">Australia</MenuItem>
