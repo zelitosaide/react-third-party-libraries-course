@@ -117,8 +117,21 @@ export default function Index() {
           <SendIcon />
         </IconButton>
       </Stack>
-      <Stack direction="row">
+      <Stack
+        direction="row"
+        spacing={2}
+      >
         <ButtonGroup variant="contained">
+          <Button>Left</Button>
+          <Button>Ceter</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
+        <ButtonGroup variant="outlined">
+          <Button>Left</Button>
+          <Button>Ceter</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
+        <ButtonGroup variant="text">
           <Button>Left</Button>
           <Button>Ceter</Button>
           <Button>Right</Button>
