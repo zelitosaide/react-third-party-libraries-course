@@ -38,7 +38,7 @@ export default function Index() {
         spacing={2}
       >
         <TextField
-          label="Small and secondary"
+          label="Form Input"
           color="secondary"
           size="small"
           required
