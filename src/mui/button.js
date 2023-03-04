@@ -155,6 +155,11 @@ export default function Index() {
           <Button>Right</Button>
         </ButtonGroup>
       </Stack>
+      <Stack direction="row">
+        <ToggleButtonGroup aria-label="text formatting">
+          <ToggleButton></ToggleButton>
+        </ToggleButtonGroup>
+      </Stack>
     </Stack>
   );
 }
