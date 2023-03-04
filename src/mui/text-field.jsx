@@ -48,6 +48,7 @@ export default function Index() {
           type="password"
           size="small"
           helperText="Do not share your password with anyone"
+          disabled
         />
       </Stack>
     </Stack>
