@@ -124,6 +124,7 @@ export default function Index() {
         <ButtonGroup
           variant="contained"
           orientation="vertical"
+          color="warning"
         >
           <Button>Left</Button>
           <Button>Ceter</Button>
