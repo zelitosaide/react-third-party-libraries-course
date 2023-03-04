@@ -118,10 +118,10 @@ export default function Index() {
         </IconButton>
       </Stack>
       <Stack direction="row">
-        <ButtonGroup>
-          <Button variant="contained">Left</Button>
-          <Button variant="contained">Ceter</Button>
-          <Button variant="contained">Right</Button>
+        <ButtonGroup variant="contained">
+          <Button>Left</Button>
+          <Button>Ceter</Button>
+          <Button>Right</Button>
         </ButtonGroup>
       </Stack>
     </Stack>
