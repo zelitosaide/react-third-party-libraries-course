@@ -51,7 +51,9 @@ export default function Index() {
           label="Password"
           type="password"
           size="small"
-          helperText="Do not share your password with anyone"
+          helperText={
+            !value ? "Required" : "Do not share your password with anyone"
+          }
           value={value}
           onChange={function (e) {
             setValue(e.target.value);
