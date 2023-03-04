@@ -52,7 +52,9 @@ export default function Index() {
           type="password"
           size="small"
           helperText={
-            !value ? "Required" : "Do not share your password with anyone"
+            !value
+              ? "This field is required!"
+              : "Do not share your password with anyone"
           }
           value={value}
           onChange={function (e) {
