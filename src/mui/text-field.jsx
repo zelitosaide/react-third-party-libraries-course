@@ -1,4 +1,4 @@
-import { Stack, TextField } from "@mui/material";
+import { Stack, TextField, InputAdornment } from "@mui/material";
 
 export default function Index() {
   return (
@@ -54,6 +54,20 @@ export default function Index() {
           label="Read Only"
           size="small"
           InputProps={{ readOnly: true }}
+        />
+      </Stack>
+
+      <Stack
+        direction="row"
+        spacing={2}
+      >
+        <TextField
+          label="Amount"
+          size="small"
+        />
+        <TextField
+          label="Weight"
+          size="small"
         />
       </Stack>
     </Stack>
