@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { Stack, TextField } from "@mui/material";
 
 export default function Index() {
   return (
@@ -6,7 +6,9 @@ export default function Index() {
       <Stack
         direction="row"
         spacing={2}
-      ></Stack>
+      >
+        <TextField label="Name" />
+      </Stack>
     </Stack>
   );
 }
