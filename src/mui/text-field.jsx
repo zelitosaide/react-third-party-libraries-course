@@ -71,6 +71,9 @@ export default function Index() {
         <TextField
           label="Weight"
           size="small"
+          InputProps={{
+            endAdornment: <InputAdornment position="end">Kg</InputAdornment>,
+          }}
         />
       </Stack>
     </Stack>
