@@ -9,6 +9,7 @@ export default function Index() {
       <Typography
         variant="h4"
         component="h1"
+        gutterBottom
       >
         H4 heading
       </Typography>
