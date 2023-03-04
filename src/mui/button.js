@@ -6,7 +6,12 @@ export default function Index() {
       spacing={2}
       direction="row"
     >
-      <Button variant="text">Text</Button>
+      <Button
+        variant="text"
+        href="https://google.com"
+      >
+        Text
+      </Button>
       <Button variant="outlined">Outlined</Button>
       <Button variant="contained">Contained</Button>
     </Stack>
