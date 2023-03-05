@@ -25,6 +25,7 @@ export default function Index() {
           onChange={function (e) {
             setValue(e.target.value);
           }}
+          row
         >
           <FormControlLabel
             control={<Radio />}
