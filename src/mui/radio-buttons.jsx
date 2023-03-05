@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   Box,
   FormControl,
@@ -8,6 +10,8 @@ import {
 } from "@mui/material";
 
 export default function Index() {
+  const [value, setValue] = useState("");
+
   return (
     <Box>
       <FormControl>
@@ -17,6 +21,10 @@ export default function Index() {
         <RadioGroup
           name="job-experience-group"
           aria-labelledby="job-experience-group-label"
+          value={value}
+          onChange={function (e) {
+            setValue(e.target.value);
+          }}
         >
           <FormControlLabel
             control={<Radio />}
