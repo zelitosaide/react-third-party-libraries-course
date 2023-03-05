@@ -28,7 +28,12 @@ export default function Index() {
           row
         >
           <FormControlLabel
-            control={<Radio />}
+            control={
+              <Radio
+                color="secondary"
+                size="small"
+              />
+            }
             label="0-2"
             value="0-2"
           />
