@@ -7,6 +7,7 @@ import {
   FormControlLabel,
   RadioGroup,
   Radio,
+  FormHelperText,
 } from "@mui/material";
 
 export default function Index() {
@@ -48,6 +49,7 @@ export default function Index() {
             value="6-10"
           />
         </RadioGroup>
+        <FormHelperText>Invalid selection</FormHelperText>
       </FormControl>
     </Box>
   );
