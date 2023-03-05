@@ -8,5 +8,14 @@ import {
 } from "@mui/material";
 
 export default function Index() {
-  return <Box></Box>;
+  return (
+    <Box>
+      <FormControl>
+        <FormLabel id="job-experience-group-label">
+          Years of experience
+        </FormLabel>
+        <RadioGroup name="job-experience-group"></RadioGroup>
+      </FormControl>
+    </Box>
+  );
 }
