@@ -17,7 +17,13 @@ export default function Index() {
         <RadioGroup
           name="job-experience-group"
           aria-labelledby="job-experience-group-label"
-        ></RadioGroup>
+        >
+          <FormControlLabel
+            control={<Radio />}
+            label="0-2"
+            value="0-2"
+          />
+        </RadioGroup>
       </FormControl>
     </Box>
   );
