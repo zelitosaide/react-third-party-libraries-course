@@ -14,7 +14,7 @@ export default function Index() {
 
   return (
     <Box>
-      <FormControl>
+      <FormControl error>
         <FormLabel id="job-experience-group-label">
           Years of experience
         </FormLabel>
