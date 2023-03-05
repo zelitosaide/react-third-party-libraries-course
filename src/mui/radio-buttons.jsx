@@ -14,7 +14,10 @@ export default function Index() {
         <FormLabel id="job-experience-group-label">
           Years of experience
         </FormLabel>
-        <RadioGroup name="job-experience-group"></RadioGroup>
+        <RadioGroup
+          name="job-experience-group"
+          aria-labelledby="job-experience-group-label"
+        ></RadioGroup>
       </FormControl>
     </Box>
   );
