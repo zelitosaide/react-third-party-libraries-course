@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import "./styles.css";
 
@@ -17,8 +18,34 @@ import image8 from "../images/image-8.jpeg";
 import image9 from "../images/image-9.jpg"; 
 
 export default function Page() {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  };
+
   return (
-    <Swiper navigation={true} modules={[Navigation]}>
+    <Swiper 
+      navigation={true} 
+      // pagination={true} 
+      // pagination={{
+      //   type: 'progressbar',
+      // }}
+      pagination={pagination}
+      modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+
+      mousewheel={true}
+      keyboard={true}
+      cssMode={true}
+      loop={true}
+      spaceBetween={30}
+
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+    >
       <SwiperSlide>
         <img src={image1} />
         <p>

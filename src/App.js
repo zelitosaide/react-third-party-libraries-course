@@ -17,6 +17,7 @@
 // import MUIComponents from "./mui";
 // import Carousel from "./swiperjs/carousel";
 import Navigation from "./swiperjs/navigation/page";
+// import Pagination from "./swiperjs/pagination/page";
 
 export function App() {
   return (
@@ -54,6 +55,7 @@ export function App() {
       {/* <MUIComponents /> */}
       {/* <Carousel /> */}
       <Navigation />
+      {/* <Pagination /> */}
     </div>
   );
 }
