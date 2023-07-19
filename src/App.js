@@ -15,6 +15,7 @@
 // import ReactQuil from "./react-quill";
 
 import MUIComponents from "./mui";
+import Carousel from "./swiperjs/carousel";
 
 export function App() {
   return (
@@ -50,6 +51,7 @@ export function App() {
       {/* <ReactQuil /> */}
 
       {/* <MUIComponents /> */}
+      <Carousel />
     </div>
   );
 }
