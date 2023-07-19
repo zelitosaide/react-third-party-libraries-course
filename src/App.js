@@ -14,7 +14,7 @@
 
 // import ReactQuil from "./react-quill";
 
-import MUIComponents from "./mui";
+// import MUIComponents from "./mui";
 import Carousel from "./swiperjs/carousel";
 
 export function App() {
