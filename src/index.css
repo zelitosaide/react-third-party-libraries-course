@@ -4,16 +4,11 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 12px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-html {
-  font-size: 12px;
 }
 
 .List {
@@ -29,11 +24,6 @@ html {
 
 .ListItemEven {
   background-color: #f8f8f0;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .form-check {

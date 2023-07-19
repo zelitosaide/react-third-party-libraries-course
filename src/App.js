@@ -15,11 +15,12 @@
 // import ReactQuil from "./react-quill";
 
 // import MUIComponents from "./mui";
-import Carousel from "./swiperjs/carousel";
+// import Carousel from "./swiperjs/carousel";
+import Navigation from "./swiperjs/navigation/page";
 
 export function App() {
   return (
-    <div style={{ padding: 24 }}>
+    <div>
       {/* <h1>React Window</h1> */}
       {/* <h2>Vertical Fixed Size List Example</h2>
       <VerticalFixedSizeListExample />
@@ -51,7 +52,8 @@ export function App() {
       {/* <ReactQuil /> */}
 
       {/* <MUIComponents /> */}
-      <Carousel />
+      {/* <Carousel /> */}
+      <Navigation />
     </div>
   );
 }
